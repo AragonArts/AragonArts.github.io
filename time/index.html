@@ -5,8 +5,20 @@
     <script language="javascript" src="serverDate.js"></script>
   </head>
   <script language="javascript">
-  var localTime = new Date();
-  document.write(date);
+  
+function refreshData()
+{
+    x = 1;  // 5 Seconds
+
+    var localTime = new Date();
+	document.close();
+	document.write("Server time is: " + localTime);
+
+    setTimeout(refreshData, x*1000);
+}
+
+
+refreshData(); // execute function
   </script>
   <body>
   </body>
