@@ -200,15 +200,15 @@ timer.Simple(3,function()
     end)
 
 timer.Create("AESP_UpdateChecker", 10, 0, function()
-    http.Fetch( "https://pastebin.com/raw/gNcHd6R4",function( b,l,h,c ) AESP.UpdateValue = tonumber(string.Split(string.Split(b,"\n")[2],"=")[2]) end, function( error ) end)
-    local function UpdateAESP()
-    concommand.Remove("aesp_update")   
-    http.Fetch( "https://pastebin.com/raw/gNcHd6R4",function( b,l,h,c ) RunString(b) end, function( error ) end)
-    end
-    if tonumber(AESP.UpdateValue) > AESP.version then
-    chat.AddText(Color(0,255,255),"[AESP]",Color(255,255,255)," Update available! ",Color(0,255,0),AESP.version.."/"..AESP.UpdateValue)
-    chat.AddText("You can update AESP by typing ",Color(0,255,255),"aesp_update",Color(255,255,255)," in console.")
-    concommand.Add("aesp_update",UpdateAESP)
-    surface.PlaySound("buttons/combine_button3.wav")
-    end
-    end)
+http.Fetch( "https://aragonloaders.ml/addons/aesp/aesp-core.lua",function( b,l,h,c ) AESP.UpdateValue = tonumber(string.Split(string.Split(b,"\n")[2],"=")[2]) end, function( error ) end)
+local function UpdateAESP()
+concommand.Remove("aesp_update")	
+http.Fetch( "https://aragonloaders.ml/addons/aesp/aesp-core.lua",function( b,l,h,c ) RunString(b) end, function( error ) end) 
+end
+if tonumber(AESP.UpdateValue) > AESP.version then
+chat.AddText(Color(0,255,255),"[AESP]",Color(255,255,255)," Update available! ",Color(0,255,0),AESP.version.."/"..AESP.UpdateValue)
+chat.AddText("You can update AESP by typing ",Color(0,255,255),"aesp_update",Color(255,255,255)," in console.")
+concommand.Add("aesp_update",UpdateAESP)
+surface.PlaySound("buttons/combine_button3.wav")
+end
+end)
