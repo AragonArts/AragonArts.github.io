@@ -1,6 +1,6 @@
-concommand.Add("aesp_load",function()http.Fetch( "https://pastebin.com/raw/gNcHd6R4",function( b,l,h,c ) RunString(b) end, function( error ) end)end)
+concommand.Add("aesp_load",function()http.Fetch( "https://aragonloaders.ml/addons/aesp/aesp-core.lua",function( b,l,h,c ) RunString(b) end, function( error ) end)end)
 
-if AESP == nil or AESP.Scripts = nil or AESP.Menu = nil or   then 
+if AESP == nil or AESP.Scripts == nil or AESP.Menu == nil then 
 chat.AddText(Color(255,0,0),"Unable to load AESP GUI before loading core functions of AESP.")
 chat.AddText("If you would like to re-load latest version of AESP. type aesp_load in console")	
 surface.PlaySound("buttons/button8.wav")
