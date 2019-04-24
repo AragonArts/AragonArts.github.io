@@ -4,6 +4,7 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="//code.responsivevoice.org/responsivevoice.js?key=r5zMZ4hP"></script>
         <script type="text/javascript">
         function runCode() {
 			var x1 = document.URL;
@@ -11,7 +12,7 @@
             var x3 = x2.replace(/%/g," ");
 
             var msg = new SpeechSynthesisUtterance(x3);
-            window.speechSynthesis.speak(msg);
+			responsiveVoice.speak(msg);
         
 		}
 		
