@@ -38,7 +38,9 @@
     "noImageResize": "",
     "uniqCompNum": 48,
     "versionPublish": "4.10.0",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "publishType": "local",
+    "publishPath": "file:///E:/GitHub/AragonArts.github.io"
   },
   "pages": {
     "index.html": {
