@@ -13,7 +13,7 @@ var l_serverImage = "";
 
 /*Custom server name configuration
 Leave it blank for automatic server name*/
-var l_serverName = "PowerPlay Sandbox";
+var l_serverName = "Half-Life 2 Campaign";
 
 /*Use a video for the background?
 Otherwise it will just use images*/
