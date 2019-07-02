@@ -50,10 +50,14 @@ var l_background = "backgrounds/videos/glimmering.webm";
 Place one or more images
 Multiple images will automatically shuffle between them*/
 var l_bgImages = [
-	"https://wallpapersite.com/images/wallpapers/deep-space-7680x4800-nebula-hd-4k-8k-4172.jpg",
-	"https://wallpapersite.com/images/wallpapers/deep-space-3840x2160-nebula-fire-spacescape-hd-4k-14140.jpg",
-	"https://wallpapersite.com/images/wallpapers/planets-3200x2000-nebula-hd-6342.jpg",
-	"https://wallpapersite.com/images/wallpapers/nebula-2560x1440-deep-space-blue-hd-13633.png"
+	"https://images4.alphacoders.com/517/51706.jpg",
+	"https://images2.alphacoders.com/267/26712.jpg",
+	"https://images.alphacoders.com/755/75593.jpg",
+	"https://images.alphacoders.com/627/62763.jpg",
+	"https://images.alphacoders.com/409/40931.jpg",
+	"https://images6.alphacoders.com/422/422163.jpg",
+	"https://images.alphacoders.com/409/40923.jpg",
+	"https://images.alphacoders.com/910/91071.jpg"
 ];
 
 /*Random background images order?*/
@@ -101,13 +105,12 @@ var l_messagesEnabled = true;
 
 /*Enter your custom messages below*/
 var l_messages = [
-"Enjoy the server",
 "Thanks for joining us!",
-"Prepare for madness!",
-"Did you know our server title change all the time?",
-"This server is special by not being special.",
-"Revers physicolgy!",
-"We know england dont worry"
+"The full HL2 game!",
+"Only with your friends!",
+"Custom playermodels",
+"It doesn't take long to load.",
+"Everyone welcome!"
 ];
 
 /*Random message order?*/
